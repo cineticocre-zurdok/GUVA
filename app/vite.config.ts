@@ -3,7 +3,11 @@ import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 import { VitePWA } from 'vite-plugin-pwa';
 
+// En local la app vive en "/"; en GitHub Pages en "/GUVA/" (la Action define BASE_PATH).
+const base = process.env.BASE_PATH ?? '/';
+
 export default defineConfig({
+  base,
   plugins: [
     react(),
     tailwindcss(),
@@ -15,7 +19,8 @@ export default defineConfig({
         short_name: 'GUVA',
         description: 'Ventas en ruta, bodega, inventario y control financiero de GUVA',
         lang: 'es-MX',
-        start_url: '/',
+        start_url: base,
+        scope: base,
         display: 'standalone',
         orientation: 'any',
         background_color: '#faf7f2',
@@ -32,7 +37,7 @@ export default defineConfig({
         // Los datos NO se cachean aquí: la copia para vender sin señal y la cola de
         // ventas, cobros y gastos viven en src/lib/datosRuta.ts y src/lib/cola.ts.
         globPatterns: ['**/*.{js,css,html,svg,png}'],
-        navigateFallback: '/index.html'
+        navigateFallback: `${base}index.html`
       }
     })
   ]

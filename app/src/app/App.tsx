@@ -95,7 +95,7 @@ export function App() {
   }
   return (
     <ProveedorSesion>
-      <BrowserRouter><Enrutador /></BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}><Enrutador /></BrowserRouter>
     </ProveedorSesion>
   );
 }

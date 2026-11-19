@@ -21,7 +21,7 @@ export function Ingreso() {
     <main className="flex min-h-full items-center justify-center bg-cacao-800 p-4">
       <form onSubmit={entrar} className="w-full max-w-sm space-y-4 rounded-3xl bg-cacao-50 p-6 shadow-xl">
         <div className="mb-2 flex items-center gap-3">
-          <img src="/icono.svg" alt="" className="h-12 w-12" />
+          <img src={`${import.meta.env.BASE_URL}icono.svg`} alt="" className="h-12 w-12" />
           <div>
             <p className="text-2xl font-bold leading-none">GUVA</p>
             <p className="text-sm text-cacao-600">Distribución y control</p>

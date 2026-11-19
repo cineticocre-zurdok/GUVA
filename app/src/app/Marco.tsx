@@ -72,7 +72,7 @@ export function Marco() {
       {/* Menú lateral: escritorio (PC matriz) */}
       <aside className="no-imprimir sticky top-0 hidden h-screen w-60 shrink-0 flex-col bg-cacao-800 p-4 md:flex">
         <div className="mb-6 flex items-center gap-2">
-          <img src="/icono.svg" alt="" className="h-9 w-9" />
+          <img src={`${import.meta.env.BASE_URL}icono.svg`} alt="" className="h-9 w-9" />
           <span className="text-xl font-bold text-white">GUVA</span>
         </div>
         <nav className="flex flex-1 flex-col gap-1">
@@ -93,7 +93,7 @@ export function Marco() {
         {/* Barra superior: celular */}
         <header className="no-imprimir sticky top-0 z-30 flex items-center justify-between bg-cacao-800 px-4 py-3 text-white md:hidden">
           <div className="flex items-center gap-2">
-            <img src="/icono.svg" alt="" className="h-7 w-7" />
+            <img src={`${import.meta.env.BASE_URL}icono.svg`} alt="" className="h-7 w-7" />
             <span className="font-bold">GUVA</span>
           </div>
           <div className="flex items-center gap-3 text-sm">
