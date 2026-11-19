@@ -1,0 +1,4 @@
+Código;Código de barras;Nombre;Marca;Línea;Presentación;Piezas por caja;Stock mínimo;Costo;Precio detalle;Precio mayoreo
+PRB-001;7500000000011;Producto PRUEBA uno;Kinder;Kinder;Pieza chica;12;24;$10,50;15;13
+PRB-002;7500000000028;Producto PRUEBA dos;Ferrero;Ferrero;Caja;8;10;20;30;26
+PRB-003;;Producto PRUEBA tres;Vualá;Vualá;Pieza;24;0;5;8;7
